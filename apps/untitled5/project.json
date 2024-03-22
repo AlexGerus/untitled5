@@ -1,0 +1,24 @@
+{
+  "name": "untitled5",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/untitled5/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "untitled5:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "untitled5:build:development"
+        },
+        "production": {
+          "buildTarget": "untitled5:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
