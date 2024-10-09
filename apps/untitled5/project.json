@@ -18,6 +18,10 @@
           "buildTarget": "untitled5:build:production"
         }
       }
+    },
+    "docker-build": {
+      "dependsOn": ["build"],
+      "command": "docker build -f apps/untitled5/Dockerfile . -t untitled5"
     }
   },
   "tags": []
